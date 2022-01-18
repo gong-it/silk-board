@@ -1,0 +1,63 @@
+#from-bar
+  margin-bottom: var(--space-xs)
+
+#to-bar
+  margin-bottom: var(--space-s)
+
+#swap-button
+  margin: auto
+  margin-bottom: var(--space-xs)
+
+#slippage-bar
+  margin-bottom: var(--space-s)
+
+.token-logo-container
+  height: 20px
+  margin: 0 var(--space-xs)
+  img
+    border-radius: 50%
+    height: inherit
+
+.token-symbol-container
+  font-size: calc(12 * var(--space-base))
+  margin-right: var(--space-xs)
+  line-height: calc(20 / 12)
+  letter-spacing: 0.04em
+  color: var(--grey-third)
+
+.current-balance
+  text-align: right
+  padding-right: var(--space-xxxm)
+  font-size: calc(8 * var(--space-base))
+
+.arrow--active
+  transform: rotate(180deg)
+
+.dropdown
+  width: 100%
+  z-index: 2
+  position: absolute
+  display: none
+  margin-top: var(--space-xxs)
+  background-color: var(--light-grey)
+  border-radius: 6px;
+  padding: var(--space-xs) var(--space-xxxm);
+  ul
+    li
+      display: flex
+      justify-content: space-between
+      font-size: calc(12 * var(--space-base))
+      line-height: calc(20 / 12)
+      letter-spacing: 0.04em
+      color: var(--grey-third)
+      cursor: pointer
+      .dropdown__left
+        display: flex
+        .token-logo-container
+          margin-left: 0
+      .dropdown__right
+        color: var(--white)
+      &:not(:last-child)
+        margin-bottom: var(--space-xs)
+  &--active
+    display: block

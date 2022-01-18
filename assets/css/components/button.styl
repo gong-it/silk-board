@@ -1,0 +1,32 @@
+@import './button/danger.styl'
+@import './button/success.styl'
+@import './button/secondary.styl'
+@import './button/round.styl'
+@import './button/circle.styl'
+@import './button/link.styl'
+@import './button/small.styl'
+
+.btn
+  border: none
+  border-radius: 6px
+  cursor: pointer
+  outline: none
+  font-weight: 700
+  padding: 0
+  min-width: 160px
+  transition: opacity .4s ease-in-out, background-color .4s ease-in-out
+  &:disabled
+    cursor: not-allowed
+  &--loading
+    pointer-events: none
+  &__icon
+    padding: var(--space-xxs) 0 var(--space-xxs) var(--space-xxs)
+    svg
+      vertical-align: sub
+  &__text
+    font-size: calc(12 * var(--space-base))
+    line-height: calc(20 / 12)
+    padding: var(--space-xxs) 0
+    display: inline-block
+    svg
+      vertical-align: middle

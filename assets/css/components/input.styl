@@ -1,0 +1,36 @@
+.input-wrapper
+  position: relative
+  width: 100%
+  label
+    margin-left: var(--space-xxxm)
+    font-size: calc(8 * var(--space-base))
+    line-height: calc(16 / 8)
+    color: var(--grey-second)
+    font-weight: bold
+  .input-container
+    width: inherit
+    display: flex
+    background-color: var(--light-grey)
+    border-radius: 6px
+    padding: var(--space-xs) var(--space-xxxm)
+    align-items: center
+    .loading
+      width: inherit
+      color: var(--grey)
+      font-size: calc(12 * var(--space-base))
+      line-height: calc(20 / 12)
+    input
+      width: inherit
+      font-size: calc(12 * var(--space-base))
+      line-height: calc(20 / 12)
+      letter-spacing: 0.04em
+      color: var(--white)
+      padding: 0
+      background-color: inherit
+      outline: none
+      border: none
+      &::placeholder
+        user-select: none
+        color: var(--grey-third)
+      &:read-only
+        color: var(--grey-third)
